@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@import "compass/css3/border-radius";
+
+body {
+  text-align: center;
+  font-family: "Georgia";
+  background: url("../images/black_lozenge.png");
+}
+
+body > .container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  margin-top: 50px;
+  @include border-radius(10px);
+  text-align: left;
+}
+
+hr {
+  height: 1px;
+  width: 75%;
+  color: black;
+  border: 0;
+  background-color: black;
+}
+
+.logo {
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.details {
+  padding-top: 10px;
+}
+
+.intro {
+  float: left;
+  width: 440px;
+  padding-left: 30px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.meetup {
+  float: right;
+  position: relative;
+  width: 450px;
+  top: 24px;
+}
+
+.clear { clear: both; }
